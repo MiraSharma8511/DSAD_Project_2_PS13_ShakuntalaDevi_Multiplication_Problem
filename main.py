@@ -2,8 +2,7 @@ from math import ceil, floor
 
 in_file = 'inputPS13.txt'
 out_file = 'outputPS13.txt'
-max_value = 0
-temp_value = 0
+
 
 def read_input_file():
     input_file = open(in_file, "r")  # Open input_file to read the file data.
@@ -21,12 +20,10 @@ def read_input_file():
     number2 = number_array[1]
     output_file = open(out_file, "w")  # Open out_file to write the output data.
     shakuntala_mul_method(int(number1), int(number2), output_file)
-    output_file.close()
+    output_file.close()  # Close the out file and free the file resource.
 
 
 def shakuntala_mul_method(number1, number2, output_file):
-    global max_value
-    global temp_value
     # If number is just one digit then no need to split, simple multiply and return result.
     if number1 < 10 or number2 < 10:
         return number1 * number2
@@ -43,17 +40,12 @@ def shakuntala_mul_method(number1, number2, output_file):
     c = floor(number2 // p)
     d = number2 % p
 
-    output_file.write("---------------------------\n")
+    output_file.write("----------------------------\n")  # Adding iterations and output details in opened output file.  
     output_file.write("1st number, x : %s\n" % number1)
     output_file.write("2nd Number, y : %s\n" % number2)
     output_file.write("Intermediate Values of A, B after partition:\n")
     output_file.write("x: " + str(number1) + " a: " + str(a) + " b : " + str(b) + "\n")
     output_file.write("y: " + str(number2) + " c: " + str(c) + " d : " + str(d) + "\n")
-    # output_file.write("---------------------------\n")
-
-    print("Intermediate Values of A, B after partition:\n")
-    print("x: " + str(number1) + " a: " + str(a) + " b : " + str(b) + "\n")
-    print("y: " + str(number2) + " c: " + str(c) + " d : " + str(d) + "\n")
 
     # Perform Recursion until we get one digit number to enter above if condition.
     ac = shakuntala_mul_method(a, c, output_file)
@@ -65,10 +57,7 @@ def shakuntala_mul_method(number1, number2, output_file):
         int(number1) * int(number2)) + "\n")
     output_file.write("---------------------------\n")
 
-    print("Intermediate Product: " + str(number1) + " x " + str(number2) + " = " + str(
-        int(number1) * int(number2)) + "\n")
     # Now return multiplication result
-    max_value = i
     return i
 
 
