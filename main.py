@@ -4,6 +4,8 @@ in_file = 'inputPS13.txt'
 out_file = 'outputPS13.txt'
 
 
+# This function is used to read input file and get 2 numbers as an input for multiplication. In this function itself
+# we are calling shakuntala_mul_method so that we can immediately execute and get multiplication results.
 def read_input_file():
     input_file = open(in_file, "r")  # Open input_file to read the file data.
     i = 0
@@ -23,6 +25,7 @@ def read_input_file():
     output_file.close()  # Close the out file and free the file resource.
 
 
+# This function is used to execute multiplication with recursion algorithm and print output in a outputPS13.txt file.
 def shakuntala_mul_method(number1, number2, output_file):
     # If number is just one digit then no need to split, simple multiply and return result.
     if number1 < 10 or number2 < 10:
@@ -61,4 +64,5 @@ def shakuntala_mul_method(number1, number2, output_file):
     return i
 
 
+# Calling function to execute the code and run function within this function.
 read_input_file()
