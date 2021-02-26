@@ -12,7 +12,6 @@ def read_input_file():
     number_array = ["", ""]  # Take an array to store the two input numbers from file.
     for line in input_file:
         number_data = line.split(":")  # Identify input numbers from input text format.
-        # print(number_data)
         number_array[i] = number_data[1].strip()
         i += 1
 
