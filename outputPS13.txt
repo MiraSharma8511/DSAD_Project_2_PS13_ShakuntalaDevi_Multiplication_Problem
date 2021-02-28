@@ -1,80 +1,97 @@
 ----------------------------
-1st number, x : 221234
+1st number, x : 654321
 2nd Number, y : 123456
 Intermediate Values of A, B after partition:
-x: 221234 a: 221 b : 234
+x: 654321 a: 654 b : 321
 y: 123456 c: 123 d : 456
 ----------------------------
-1st number, x : 221
+1st number, x : 654
 2nd Number, y : 123
 Intermediate Values of A, B after partition:
-x: 221 a: 22 b : 1
+x: 654 a: 65 b : 4
 y: 123 c: 12 d : 3
 ----------------------------
-1st number, x : 22
+1st number, x : 65
 2nd Number, y : 12
 Intermediate Values of A, B after partition:
-x: 22 a: 2 b : 2
+x: 65 a: 6 b : 5
 y: 12 c: 1 d : 2
-Intermediate Product: 22 x 12 = 264
+Intermediate Product: 65 x 12 = 780
 ---------------------------
 ----------------------------
-1st number, x : 23
+1st number, x : 69
 2nd Number, y : 15
 Intermediate Values of A, B after partition:
-x: 23 a: 2 b : 3
+x: 69 a: 6 b : 9
 y: 15 c: 1 d : 5
-Intermediate Product: 23 x 15 = 345
+Intermediate Product: 69 x 15 = 1035
 ---------------------------
-Intermediate Product: 221 x 123 = 27183
+Intermediate Product: 654 x 123 = 80442
 ---------------------------
 ----------------------------
-1st number, x : 234
+1st number, x : 321
 2nd Number, y : 456
 Intermediate Values of A, B after partition:
-x: 234 a: 23 b : 4
+x: 321 a: 32 b : 1
 y: 456 c: 45 d : 6
 ----------------------------
-1st number, x : 23
+1st number, x : 32
 2nd Number, y : 45
 Intermediate Values of A, B after partition:
-x: 23 a: 2 b : 3
+x: 32 a: 3 b : 2
 y: 45 c: 4 d : 5
-Intermediate Product: 23 x 45 = 1035
+Intermediate Product: 32 x 45 = 1440
 ---------------------------
 ----------------------------
-1st number, x : 27
+1st number, x : 33
 2nd Number, y : 51
 Intermediate Values of A, B after partition:
-x: 27 a: 2 b : 7
+x: 33 a: 3 b : 3
 y: 51 c: 5 d : 1
-Intermediate Product: 27 x 51 = 1377
+Intermediate Product: 33 x 51 = 1683
 ---------------------------
-Intermediate Product: 234 x 456 = 106704
+Intermediate Product: 321 x 456 = 146376
 ---------------------------
 ----------------------------
-1st number, x : 455
+1st number, x : 975
 2nd Number, y : 579
 Intermediate Values of A, B after partition:
-x: 455 a: 45 b : 5
+x: 975 a: 97 b : 5
 y: 579 c: 57 d : 9
 ----------------------------
-1st number, x : 45
+1st number, x : 97
 2nd Number, y : 57
 Intermediate Values of A, B after partition:
-x: 45 a: 4 b : 5
+x: 97 a: 9 b : 7
 y: 57 c: 5 d : 7
-Intermediate Product: 45 x 57 = 2565
+----------------------------
+1st number, x : 16
+2nd Number, y : 12
+Intermediate Values of A, B after partition:
+x: 16 a: 1 b : 6
+y: 12 c: 1 d : 2
+Intermediate Product: 16 x 12 = 192
+---------------------------
+Intermediate Product: 97 x 57 = 5529
 ---------------------------
 ----------------------------
-1st number, x : 50
+1st number, x : 102
 2nd Number, y : 66
 Intermediate Values of A, B after partition:
-x: 50 a: 5 b : 0
+x: 102 a: 10 b : 2
 y: 66 c: 6 d : 6
-Intermediate Product: 50 x 66 = 3300
+----------------------------
+1st number, x : 12
+2nd Number, y : 12
+Intermediate Values of A, B after partition:
+x: 12 a: 1 b : 2
+y: 12 c: 1 d : 2
+Intermediate Product: 12 x 12 = 144
 ---------------------------
-Intermediate Product: 455 x 579 = 263445
+Intermediate Product: 102 x 66 = 6732
 ---------------------------
-Intermediate Product: 221234 x 123456 = 27312664704
+Intermediate Product: 975 x 579 = 564525
 ---------------------------
+Intermediate Product: 654321 x 123456 = 80779853376
+---------------------------
+Result:> 654321 X 123456 = 80779853376

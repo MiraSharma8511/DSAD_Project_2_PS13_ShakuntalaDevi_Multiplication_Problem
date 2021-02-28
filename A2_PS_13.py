@@ -20,7 +20,7 @@ def read_input_file():
     number1 = number_array[0]
     number2 = number_array[1]
     output_file = open(out_file, "w")  # Open out_file to write the output data.
-    shakuntala_mul_method(int(number1), int(number2), output_file)
+    multiplication(number1, number2, output_file)  # call multiplication method and print output in output file.
     output_file.close()  # Close the out file and free the file resource.
 
 
@@ -61,6 +61,13 @@ def shakuntala_mul_method(number1, number2, output_file):
 
     # Now return multiplication result
     return i
+
+
+def multiplication(number1, number2, output_file):
+    output_file.write(
+        "Result:> " + str(number1) + " X " + str(number2) + " = " + str(
+            shakuntala_mul_method(int(number1), int(number2),
+                                  output_file)))
 
 
 # Calling function to execute the code and run function within this function.
